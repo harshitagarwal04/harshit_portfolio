@@ -1,4 +1,5 @@
 import { Inter, JetBrains_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { PixiBackground } from "@/components/pixi/PixiBackground";
 
@@ -22,6 +23,7 @@ export default function RootLayout({
         <div className="relative z-10 w-full">
           {children}
         </div>
+        <Analytics />
       </body>
     </html>
   );
