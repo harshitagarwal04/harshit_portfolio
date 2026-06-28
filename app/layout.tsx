@@ -6,8 +6,8 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
 export const metadata = {
-  title: "Harshit Agarwal | Full Stack Engineer",
-  description: "Portfolio of Harshit Agarwal, building AI-powered systems.",
+  title: "Harshit Agarwal | Founding Software Engineer",
+  description: "Portfolio of Harshit Agarwal, building AI-powered products.",
 };
 
 export default function RootLayout({

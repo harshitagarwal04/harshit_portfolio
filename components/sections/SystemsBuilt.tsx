@@ -5,20 +5,20 @@ import { TerminalWindow } from "@/components/ui/TerminalWindow";
 export const SystemsBuilt = () => {
   const systems = [
     {
-      name: "Voice AI Calling Pipeline",
-      features: ["automated outbound calling", "retry scheduling for unanswered calls", "lead qualification", "call analysis after completion", "admin dashboard monitoring"],
+      name: "Voice AI Infrastructure",
+      features: ["telephony integrations", "speech pipelines", "multiple TTS/STT providers", "conversation orchestration", "provider abstraction"],
     },
     {
-      name: "Vector Retrieval Infrastructure",
-      features: ["PGVector based contextual search", "high-dimensional embedding storage", "fast nearest-neighbor similarity"],
+      name: "Retrieval Infrastructure",
+      features: ["PGVector based contextual search", "embedding storage", "similarity-based document retrieval"],
     },
     {
-      name: "Automation Workflows",
-      features: ["n8n based internal automation pipelines", "cross-service event dispatching", "ETL data routing"],
+      name: "Automation Platform",
+      features: ["n8n based event-driven workflows", "CRM operations & integrations", "ETL pipelines", "cross-service orchestration"],
     },
     {
-      name: "Telephony Integrations Gateway",
-      features: ["Twilio webhooks", "Exotel connection handling", "Tata Tele SIP trunking"],
+      name: "Cloud Infrastructure",
+      features: ["containerized microservices on Google Cloud", "CI/CD & environment management", "monitoring", "scalable backend architecture"],
     }
   ];
 

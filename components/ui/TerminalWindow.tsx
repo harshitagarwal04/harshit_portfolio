@@ -13,9 +13,9 @@ export const TerminalWindow = ({ children, title = "terminal", className }: Term
       {/* Header */}
       <div className="flex items-center px-4 py-3 border-b border-gray-800 bg-gray-900/80">
         <div className="flex gap-2 mr-4">
-          <div className="w-3 h-3 rounded-full bg-gray-700"></div>
-          <div className="w-3 h-3 rounded-full bg-gray-700"></div>
-          <div className="w-3 h-3 rounded-full bg-gray-700"></div>
+          <div className="w-3 h-3 rounded-full bg-red-500/70"></div>
+          <div className="w-3 h-3 rounded-full bg-yellow-500/70"></div>
+          <div className="w-3 h-3 rounded-full bg-green-500/70"></div>
         </div>
         <div className="text-xs md:text-sm font-mono text-gray-400 flex-1 text-center pr-12 select-none">
           {title}

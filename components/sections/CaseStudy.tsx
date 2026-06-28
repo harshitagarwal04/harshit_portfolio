@@ -9,7 +9,7 @@ export const CaseStudy = () => {
       <div className="bg-gray-900/40 border border-gray-800 rounded-lg p-6 md:p-10 space-y-8">
         <div>
           <h3 className="text-2xl md:text-3xl font-bold text-gray-100 mb-2">
-            Building a Voice AI Calling System
+            Building an AI Voice Calling Platform
           </h3>
           <p className="font-mono text-sm text-green-400">STATUS: DEPLOYED_TO_PRODUCTION</p>
         </div>
@@ -36,6 +36,7 @@ export const CaseStudy = () => {
             <li>Scheduling calls via intelligent queuing.</li>
             <li>Automatically retrying unanswered leads with progressive delays.</li>
             <li>Processing deep call outcomes and conversational context.</li>
+            <li>Syncing call outcomes and lead state into CRM workflows.</li>
             <li>Providing real-time management via an admin dashboard.</li>
           </ul>
         </div>

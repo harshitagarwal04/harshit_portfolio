@@ -4,16 +4,16 @@ import { TerminalWindow } from "@/components/ui/TerminalWindow";
 
 export const Philosophy = () => {
   const principles = [
-    "Build systems that solve real problems instead of fragile demo projects.",
-    "Prefer simple architectures fundamentally before introducing complexity.",
-    "Focus relentlessly on backend reliability, observability, and automation.",
-    "Explore practical ways AI and emergent models can improve real-world workflows.",
-    "Learn aggressively through building, breaking, and iterating on real systems."
+    "Solve business problems with practical AI.",
+    "Design reliable backend systems.",
+    "Favor automation over manual processes.",
+    "Prefer simplicity before complexity.",
+    "Learn continuously through building production software."
   ];
 
   return (
     <SectionWrapper id="philosophy">
-      <CommandBlock command="vim ~./engineering_philosophy.md" />
+      <CommandBlock command="cat ~/engineering_philosophy.md" />
       
       <TerminalWindow title="engineering_mindset.txt" className="mt-8">
         <div className="space-y-6">
@@ -32,13 +32,6 @@ export const Philosophy = () => {
                 </p>
               </div>
             ))}
-            
-            <div className="flex gap-4 opacity-50">
-              <span className="text-gray-500 select-none">
-                {(principles.length + 1).toString().padStart(2, '0')}
-              </span>
-              <span className="w-2 h-5 bg-gray-500 animate-pulse block mt-0.5"></span>
-            </div>
           </div>
         </div>
       </TerminalWindow>

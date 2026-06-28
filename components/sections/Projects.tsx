@@ -1,24 +1,27 @@
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { CommandBlock } from "@/components/ui/CommandBlock";
 import { FolderGit2 } from "lucide-react";
+import Link from "next/link";
 
 export const Projects = () => {
   const projects = [
     {
       title: "LeafLens — Plant Disease Detection",
+      repo: "https://github.com/harshitagarwal04/LeafLens",
       description: [
-        "CNN model built using ResNet50 framework.",
-        "Trained on a robust dataset of 87k+ plant leaf images.",
-        "Precision image classification for multi-class plant diseases.",
-        "Interactive web interface built rapidly with Streamlit."
+        "AI-powered plant disease detection platform.",
+        "Trained a ResNet50 model on 87k+ plant leaf images.",
+        "Built an inference pipeline with Python.",
+        "Developed an interactive Streamlit application for disease detection."
       ],
       features: ["image upload", "preprocessing pipeline", "real-time prediction"]
     },
     {
-      title: "Uber Clone Application",
+      title: "RadiantRides — Uber Clone",
+      repo: "https://github.com/harshitagarwal04/RadiantRides",
       description: [
-        "React Native mobile application faithfully replicating ride-hailing core user flows.",
-        "Real-time coordinate mapping and state synchronization."
+        "React Native ride-hailing application with authentication and live location tracking.",
+        "Route visualization, ride estimation, and backend API integration."
       ],
       features: ["user authentication", "location tracking", "ride estimate APIs", "mobile UI workflows"]
     }
@@ -26,7 +29,7 @@ export const Projects = () => {
 
   return (
     <SectionWrapper id="projects">
-      <CommandBlock command="cd ~/personal_projects && ls -al" />
+      <CommandBlock command="ls ./projects" />
       
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((project, index) => (
@@ -34,9 +37,14 @@ export const Projects = () => {
             key={index}
             className="group relative p-6 border border-gray-700 bg-gray-950/80 rounded-xl hover:border-gray-600 transition-colors duration-300"
           >
-            <div className="absolute top-0 right-0 p-6 opacity-20 group-hover:opacity-100 transition-opacity">
+            <Link
+              href={project.repo}
+              target="_blank"
+              aria-label={`${project.title} repository`}
+              className="absolute top-0 right-0 p-6 opacity-60 md:opacity-20 md:group-hover:opacity-100 transition-opacity"
+            >
               <FolderGit2 className="text-gray-400" size={24} />
-            </div>
+            </Link>
             
             <h3 className="text-xl font-bold text-gray-200 mb-4 pr-8">{project.title}</h3>
             
