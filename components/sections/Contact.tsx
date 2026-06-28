@@ -193,7 +193,7 @@ export const Contact = () => {
                 reason for reaching out *
               </label>
               <Dropdown
-                name="subject"
+                name="reason"
                 required
                 options={REASON_OPTIONS}
                 value={reason}
