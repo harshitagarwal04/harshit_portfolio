@@ -1,0 +1,171 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Harshit Agarwal
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.25in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Harshit Agarwal} \\ \vspace{1pt}
+    \small +91 8580506698 $|$
+    \href{mailto:harshitagarwal713@gmail.com}{\underline{harshitagarwal713@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/harshit-713-agarwal/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/harshitagarwal04}{\underline{GitHub}} $|$
+    \href{https://portfolio-nine-gamma-s4i81zemtb.vercel.app/}{\underline{Portfolio}}
+\end{center}
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+\small{
+Engineer focused on building and deploying real-world AI products. Experienced across full-stack and data workflows using Next.js, Python, PostgreSQL, PGVector, Pipecat, and n8n, with hands-on exposure to microservices, vector search, and cloud-based delivery. Passionate about practical AI engineering---integrating LLM-powered features, scalable architectures, and automated workflows to build products that solve real business problems at scale.
+}
+
+%-----------SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:}{ Python, JavaScript, SQL, CLI} \\
+     \textbf{Frontend:}{ Next.js, React} \\
+     \textbf{Backend:}{ REST APIs, SQLAlchemy} \\
+     \textbf{Databases:}{ MySQL, PostgreSQL} \\
+     \textbf{AI \& Systems:}{ Vector Search (PGVector), Voice AI (Pipecat), Document AI \& OCR, Workflow Automation (n8n), Microservices} \\
+     \textbf{Tools \& Platforms:}{ Git, GitHub, Postman, VS Code, Google Cloud Run}
+    }}
+\end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vaanii Global Technologies LLP}{Jun 2026 -- Present}
+      {Founding Software Engineer}{Remote, India}
+      \resumeItemListStart
+
+        \resumeItem{Own the end-to-end backend architecture for an AI-powered customer engagement platform, built independently from the ground up.}
+
+        \resumeItem{Built a new \textbf{Voice AI backend} integrating LLM, Speech-to-Text, and Text-to-Speech providers into a unified conversation pipeline.}
+
+        \resumeItem{Built a production \textbf{OCR-based document verification pipeline} for government documents, cross-verifying a submitted document against 10+ supporting documents at the field level.}
+
+        \resumeItem{Achieved \textbf{99.9\% text extraction accuracy} with table structure preserved, processing a complete 20-page verification set end-to-end in \textbf{33--40 seconds} across extraction, verification, and response.}
+
+        \resumeItem{Designed CRM and campaign-management features (lead upload, status tracking, outbound voice campaigns) backed by asynchronous processing pipelines on \textbf{FastAPI}, \textbf{SQLAlchemy}, and \textbf{PostgreSQL}, deployed on \textbf{Google Cloud}.}
+
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {ConversAI Labs}{Jun 2025 -- Jun 2026}
+      {Software Engineer (prev. Full Stack Intern)}{Remote, India}
+      \resumeItemListStart
+
+        \resumeItem{Led development of the \textbf{Pipecat-based Voice AI backend}, designed to scale to \textbf{900+ calls/hour}; handled \textbf{480+ calls/hour} in production under telephony provider concurrency limits.}
+
+        \resumeItem{Built backend services with \textbf{FastAPI} and \textbf{SQLAlchemy}, and automated post-call workflows (WhatsApp messaging, form submission, CRM logging) end-to-end in n8n, removing manual lead processing.}
+
+        \resumeItem{Reduced conversation latency and mid-call drop-offs by optimizing turn-taking logic in production.}
+
+        \resumeItem{Built PGVector-based retrieval across 100+ transcripts to improve AI response accuracy.}
+
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Plant Leaf Disease Detection} $|$ \emph{Python, PyTorch, Streamlit} $|$ \href{https://github.com/harshitagarwal04/LeafLens}{\underline{Link}}}{}
+          \resumeItemListStart
+            \resumeItem{Built a \textbf{PyTorch CNN} model using pre-trained \textbf{ResNet50} to classify plant leaf diseases, trained on \textbf{87,000+ images} across multiple disease categories.}
+            \resumeItem{Developed an interactive \textbf{Streamlit} web app enabling real-time image upload and instant disease prediction.}
+            \resumeItem{Implemented image preprocessing pipelines (resizing, normalization) to standardize inputs and improve model consistency.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Uber Clone Application} $|$ \emph{React Native, JavaScript, APIs} $|$ \href{https://github.com/harshitagarwal04/RadiantRides}{\underline{Link}}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a full-featured \textbf{Uber Clone} in React Native with real-time ride estimation and \textbf{location tracking} via third-party API integrations.}
+            \resumeItem{Implemented secure \textbf{user authentication and authorization} flows to protect application access and user data.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Krishna Engineering College}{Aug 2022 -- May 2025}
+      {B.Tech in Computer Science}{Ghaziabad, Uttar Pradesh}
+  \resumeSubHeadingListEnd
+
+\end{document}
