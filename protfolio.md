@@ -126,25 +126,15 @@ Built and deployed containerized microservices on Google Cloud with CI/CD, envir
 
 Projects
 
-LeafLens
+HuntLoop — AI-Powered Job Application Tracker
 
-AI-powered plant disease detection platform.
+Next.js • TypeScript • Supabase • PostgreSQL • Gmail API • LLMs
 
-* Trained a ResNet50 model on 87k+ plant leaf images.
-* Built an inference pipeline with Python.
-* Developed an interactive Streamlit application for disease detection.
-
-⸻
-
-Uber Clone
-
-React Native ride-hailing application featuring:
-
-* authentication
-* live location tracking
-* route visualization
-* ride estimation
-* backend API integration
+* Built a full-stack job-application platform that tracks each application's status, resume version, emails, and follow-ups, with a 9-stage pipeline, a Kanban board, and an event timeline.
+* Built an LLM routing layer across multiple free-tier providers with automatic failover and rate-limit cooldowns, so a single provider's quota running out doesn't fail the request.
+* Built a cover-letter generator that extracts structured data from job descriptions, picks the best-matching resume, and flags claims the resume doesn't support before the letter goes out.
+* Integrated Gmail over OAuth to sync inbound email, match messages to applications, classify them with an LLM into user-approved status suggestions, and create follow-up drafts in the real inbox.
+* Built job discovery across job boards and company careers pages, using content hashing to skip LLM calls on unchanged pages, plus a Chrome extension that saves a posting in one click.
 
 ⸻
 
